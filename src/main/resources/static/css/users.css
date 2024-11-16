@@ -1,0 +1,56 @@
+h1 {
+    font-size: 5em;
+    text-align: center;
+}
+
+.users ul {
+    position: relative;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.users li {
+    border: 1px solid #0f0d0d;
+    background-color: rgb(226, 217, 217);
+    font-size: 2em;
+    margin: 1% 1% 0% 0%; /* Ajuster les marges */
+    padding: 10px;
+    list-style-type: none;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+button{
+    width : 100%;
+}
+
+.users li:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.idApi {
+    color: rgb(61, 55, 55);
+}
+
+@media screen and (max-width: 1100px) {
+    h1 {
+        font-size: 3em;
+    }
+    
+    li {
+        font-size: 1em;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    li {
+        width: 35%;
+    }
+}
